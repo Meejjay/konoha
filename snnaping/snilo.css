@@ -1,0 +1,707 @@
+@import url('https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Poetsen One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "wdth" 100, "YTLC" 500;
+}
+
+.container {
+    padding: 50px 50px;
+    height: 100vh;
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.principal {
+    height: 400px;
+    width: 300px;
+    padding: 20px;
+    perspective: 10000px;
+}
+
+.card {
+    padding-top: 100px;
+    transform-style: preserve-3d;
+    background-image: url("cactos.jpg");
+    background-position: center center;
+    width: 100%;
+    transition: all 0.5s ease-in-out;
+    border-radius: 10px;
+}
+
+.card:hover {
+    background-position: 80% 20%;
+    transform: rotate3d(0.5, 1, 0, 30deg);
+}
+
+.conteudo-box {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.811);
+    border-radius: 0px 0px 10px 10px;
+    box-shadow: rgba(0, 115, 255, 0.925) 0px 20px 50px -25px;
+    transition: all 0.5s ease-in-out;
+    padding: 50px 25px 25px 25px;
+    transform-style: preserve-3d;
+}
+
+.card-titulo {
+    color: white;
+    font-size: 25px;
+    font-weight: 900;
+    transition: all 0.5s ease-in-out;
+    transform: translate3d(0px, 0px, 20px);
+}
+
+.card-titulo:hover {
+    transform: translate3d(0px, 0px, 50px);
+}
+
+.conteudo-card {
+    padding-top: 15px;
+    font-size: 12px;
+    color: rgb(185, 185, 185);
+    transition: all 0.5s ease-in-out;
+    transform: translate3d(0px, 0px, 20px);
+}
+
+.conteudo-card:hover {
+    transform: translate3d(0px, 0px, 50px);
+}
+
+.veja-mais {
+    display: block;
+    font-size: 11px;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: rgb(0, 136, 255);
+    padding-top: 15px;
+    transition: all 0.5s ease-in-out;
+    transform: translate3d(0px, 0px, 20px);
+}
+
+.veja-mais:hover {
+    transform: translate3d(0px, 0px, 50px);
+}
+
+.data-box-1 {
+    position: absolute;
+    top: 75px;
+    left: 25px;
+    height: 60px;
+    width: 60px;
+    background-image: url(spyke.png);
+    background-size: cover;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: rgb(0, 102, 255) 0px 20px 60px 0px rgb(0.200.255);
+    transform: translate3d(0px, 0px, 20px);
+}
+
+.date-box span {
+    display: block;
+    text-align: center;
+}
+
+.date-box .mes-box {
+    color: white;
+    font-size: 11px;
+    font-weight: 700;
+}
+
+.date-box .dia-box {
+    font-size: 20px;
+    font-weight: 900;
+    color: rgb(0, 136, 255);
+}
+
+.card2 {
+    filter: hue-rotate(0deg);
+}
+
+.card3 {
+    filter: hue-rotate(0deg);
+}
+
+.card4 {
+    filter: hue-rotate(0deg);
+}
+
+.card-segundo {
+    padding-top: 100px;
+    transform-style: preserve-3d;
+    background-image: url("raios.jpg");
+    background-position: center center;
+    width: 100%;
+    transition: all 0.5s ease-in-out;
+    border-radius: 10px;
+}
+
+.card-terceiro {
+    padding-top: 100px;
+    transform-style: preserve-3d;
+    background-image: url("sapos.jpg");
+    background-position: center center;
+    width: 100%;
+    transition: all 0.5s ease-in-out;
+    border-radius: 10px;
+}
+
+.card-quarto {
+    padding-top: 100px;
+    transform-style: preserve-3d;
+    background-image: url("doces.jpg");
+    background-position: center center;
+    width: 100%;
+    transition: all 0.5s ease-in-out;
+    border-radius: 10px;
+}
+
+.data-box-2 {
+    position: absolute;
+    top: 75px;
+    left: 25px;
+    height: 60px;
+    width: 60px;
+    background-image: url(max.png);
+    background-size: cover;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: rgb(0, 102, 255) 0px 20px 60px 0px rgb(0.200.255);
+    transform: translate3d(0px, 0px, 20px);
+}
+
+.data-box-3 {
+    position: absolute;
+    top: 75px;
+    left: 25px;
+    height: 60px;
+    width: 60px;
+    background-image: url(buzz.png);
+    background-size: cover;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: rgb(0, 102, 255) 0px 20px 60px 0px rgb(0.200.255);
+    transform: translate3d(0px, 0px, 20px);
+}
+
+.data-box-4 {
+    position: absolute;
+    top: 75px;
+    left: 25px;
+    height: 60px;
+    width: 60px;
+    background-image: url(mandy.png);
+    background-size: cover;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: rgb(0, 102, 255) 0px 20px 60px 0px rgb(0.200.255);
+    transform: translate3d(0px, 0px, 20px);
+}
+
+.card-segundo:hover {
+    background-position: 80% 20%;
+    transform: rotate3d(0.5, 1, 0, 30deg);
+}
+
+.card-terceiro:hover {
+    background-position: 80% 20%;
+    transform: rotate3d(0.5, 1, 0, 30deg);
+}
+
+.card-quarto:hover {
+    background-position: 80% 20%;
+    transform: rotate3d(0.5, 1, 0, 30deg);
+}
+
+.pagina1 {
+    background-image: url(brawn.png);
+}
+
+.pagina2 {
+    background-image: url(brawn2.png);
+}
+
+.pagina3 {
+    background-image: url(brawn3.png);
+}
+
+.pagina4 {
+    background-image: url(brawn4.png);
+}
+
+.pagina5 {
+    background-image: url(brawn5.png);
+}
+
+.data-box-5 {
+    position: absolute;
+    top: 75px;
+    left: 25px;
+    height: 60px;
+    width: 60px;
+    background-image: url(brock.png);
+    background-size: cover;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: rgb(0, 102, 255) 0px 20px 60px 0px rgb(0.200.255);
+    transform: translate3d(0px, 0px, 20px);
+}
+
+.data-box-6 {
+    position: absolute;
+    top: 75px;
+    left: 25px;
+    height: 60px;
+    width: 60px;
+    background-image: url(mortis.png);
+    background-size: cover;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: rgb(0, 102, 255) 0px 20px 60px 0px rgb(0.200.255);
+    transform: translate3d(0px, 0px, 20px);
+}
+
+.data-box-7 {
+    position: absolute;
+    top: 75px;
+    left: 25px;
+    height: 60px;
+    width: 60px;
+    background-image: url(Frank.png);
+    background-size: cover;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: rgb(0, 102, 255) 0px 20px 60px 0px rgb(0.200.255);
+    transform: translate3d(0px, 0px, 20px);
+}
+
+.data-box-8 {
+    position: absolute;
+    top: 75px;
+    left: 25px;
+    height: 60px;
+    width: 60px;
+    background-image: url(corvo.png);
+    background-size: cover;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: rgb(0, 102, 255) 0px 20px 60px 0px rgb(0.200.255);
+    transform: translate3d(0px, 0px, 20px);
+}
+
+.data-box-9 {
+    position: absolute;
+    top: 75px;
+    left: 25px;
+    height: 60px;
+    width: 60px;
+    background-image: url(amber.png);
+    background-size: cover;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: rgb(0, 102, 255) 0px 20px 60px 0px rgb(0.200.255);
+    transform: translate3d(0px, 0px, 20px);
+}
+
+.data-box-10 {
+    position: absolute;
+    top: 75px;
+    left: 25px;
+    height: 60px;
+    width: 60px;
+    background-image: url(maisie.png);
+    background-size: cover;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: rgb(0, 102, 255) 0px 20px 60px 0px rgb(0.200.255);
+    transform: translate3d(0px, 0px, 20px);
+}
+
+.data-box-11 {
+    position: absolute;
+    top: 75px;
+    left: 25px;
+    height: 60px;
+    width: 60px;
+    background-image: url(cordelius.png);
+    background-size: cover;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: rgb(0, 102, 255) 0px 20px 60px 0px rgb(0.200.255);
+    transform: translate3d(0px, 0px, 20px);
+}
+
+.data-box-12 {
+    position: absolute;
+    top: 75px;
+    left: 25px;
+    height: 60px;
+    width: 60px;
+    background-image: url(kit.png);
+    background-size: cover;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: rgb(0, 102, 255) 0px 20px 60px 0px rgb(0.200.255);
+    transform: translate3d(0px, 0px, 20px);
+}
+
+.data-box-13 {
+    position: absolute;
+    top: 75px;
+    left: 25px;
+    height: 60px;
+    width: 60px;
+    background-image: url(draco.png);
+    background-size: cover;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: rgb(0, 102, 255) 0px 20px 60px 0px rgb(0.200.255);
+    transform: translate3d(0px, 0px, 20px);
+}
+
+.data-box-14 {
+    position: absolute;
+    top: 75px;
+    left: 25px;
+    height: 60px;
+    width: 60px;
+    background-image: url(angelo.png);
+    background-size: cover;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: rgb(0, 102, 255) 0px 20px 60px 0px rgb(0.200.255);
+    transform: translate3d(0px, 0px, 20px);
+}
+
+.data-box-15 {
+    position: absolute;
+    top: 75px;
+    left: 25px;
+    height: 60px;
+    width: 60px;
+    background-image: url(melod.png);
+    background-size: cover;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: rgb(0, 102, 255) 0px 20px 60px 0px rgb(0.200.255);
+    transform: translate3d(0px, 0px, 20px);
+}
+
+.data-box-16 {
+    position: absolute;
+    top: 75px;
+    left: 25px;
+    height: 60px;
+    width: 60px;
+    background-image: url(tick.png);
+    background-size: cover;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: rgb(0, 102, 255) 0px 20px 60px 0px rgb(0.200.255);
+    transform: translate3d(0px, 0px, 20px);
+}
+
+.data-box-17 {
+    position: absolute;
+    top: 75px;
+    left: 25px;
+    height: 60px;
+    width: 60px;
+    background-image: url(ash.png);
+    background-size: cover;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: rgb(0, 102, 255) 0px 20px 60px 0px rgb(0.200.255);
+    transform: translate3d(0px, 0px, 20px);
+}
+
+.data-box-18 {
+    position: absolute;
+    top: 75px;
+    left: 25px;
+    height: 60px;
+    width: 60px;
+    background-image: url(meg.png);
+    background-size: cover;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: rgb(0, 102, 255) 0px 20px 60px 0px rgb(0.200.255);
+    transform: translate3d(0px, 0px, 20px);
+}
+
+.data-box-19 {
+    position: absolute;
+    top: 75px;
+    left: 25px;
+    height: 60px;
+    width: 60px;
+    background-image: url(gus.png);
+    background-size: cover;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: rgb(0, 102, 255) 0px 20px 60px 0px rgb(0.200.255);
+    transform: translate3d(0px, 0px, 20px);
+}
+
+.data-box-20 {
+    position: absolute;
+    top: 75px;
+    left: 25px;
+    height: 60px;
+    width: 60px;
+    background-image: url(lily.png);
+    background-size: cover;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: rgb(0, 102, 255) 0px 20px 60px 0px rgb(0.200.255);
+    transform: translate3d(0px, 0px, 20px);
+}
+
+.card-quinto {
+    padding-top: 100px;
+    transform-style: preserve-3d;
+    background-image: url("miseu.jpg");
+    background-position: center center;
+    width: 100%;
+    transition: all 0.5s ease-in-out;
+    border-radius: 10px;
+}
+
+.card-sexto {
+    padding-top: 100px;
+    transform-style: preserve-3d;
+    background-image: url("morte.jpg");
+    background-position: center center;
+    width: 100%;
+    transition: all 0.5s ease-in-out;
+    border-radius: 10px;
+}
+
+.card-setimo {
+    padding-top: 100px;
+    transform-style: preserve-3d;
+    background-image: url("tumulo.jpg");
+    background-position: center center;
+    width: 100%;
+    transition: all 0.5s ease-in-out;
+    border-radius: 10px;
+}
+
+.card-oitavo {
+    padding-top: 100px;
+    transform-style: preserve-3d;
+    background-image: url("itachi.jpg");
+    background-position: center center;
+    width: 100%;
+    transition: all 0.5s ease-in-out;
+    border-radius: 10px;
+}
+
+.card-nono {
+    padding-top: 100px;
+    transform-style: preserve-3d;
+    background-image: url("fogo.jpg");
+    background-position: center center;
+    width: 100%;
+    transition: all 0.5s ease-in-out;
+    border-radius: 10px;
+}
+
+.card-decimo {
+    padding-top: 100px;
+    transform-style: preserve-3d;
+    background-image: url("vapor.jpg");
+    background-position: center center;
+    width: 100%;
+    transition: all 0.5s ease-in-out;
+    border-radius: 10px;
+}
+
+.card-11 {
+    padding-top: 100px;
+    transform-style: preserve-3d;
+    background-image: url("cogu.jpg");
+    background-position: center center;
+    width: 100%;
+    transition: all 0.5s ease-in-out;
+    border-radius: 10px;
+}
+
+.card-12 {
+    padding-top: 100px;
+    transform-style: preserve-3d;
+    background-image: url("gato.jpg");
+    background-position: center center;
+    width: 100%;
+    transition: all 0.5s ease-in-out;
+    border-radius: 10px;
+}
+
+.card-13 {
+    padding-top: 100px;
+    transform-style: preserve-3d;
+    background-image: url("drago.jpg");
+    background-position: center center;
+    width: 100%;
+    transition: all 0.5s ease-in-out;
+    border-radius: 10px;
+}
+
+.card-14 {
+    padding-top: 100px;
+    transform-style: preserve-3d;
+    background-image: url("eca.jpg");
+    background-position: center center;
+    width: 100%;
+    transition: all 0.5s ease-in-out;
+    border-radius: 10px;
+}
+
+.card-15 {
+    padding-top: 100px;
+    transform-style: preserve-3d;
+    background-image: url("musica.jpg");
+    background-position: center center;
+    width: 100%;
+    transition: all 0.5s ease-in-out;
+    border-radius: 10px;
+}
+
+.card-16 {
+    padding-top: 100px;
+    transform-style: preserve-3d;
+    background-image: url("bomba.jpg");
+    background-position: center center;
+    width: 100%;
+    transition: all 0.5s ease-in-out;
+    border-radius: 10px;
+}
+
+.card-17 {
+    padding-top: 100px;
+    transform-style: preserve-3d;
+    background-image: url("lixo.jpg");
+    background-position: center center;
+    width: 100%;
+    transition: all 0.5s ease-in-out;
+    border-radius: 10px;
+}
+
+.card-18 {
+    padding-top: 100px;
+    transform-style: preserve-3d;
+    background-image: url("robo.jpg");
+    background-position: center center;
+    width: 100%;
+    transition: all 0.5s ease-in-out;
+    border-radius: 10px;
+}
+
+.card-19 {
+    padding-top: 100px;
+    transform-style: preserve-3d;
+    background-image: url("balao.jpg");
+    background-position: center center;
+    width: 100%;
+    transition: all 0.5s ease-in-out;
+    border-radius: 10px;
+}
+
+.card-20 {
+    padding-top: 100px;
+    transform-style: preserve-3d;
+    background-image: url("plantas.jpg");
+    background-position: center center;
+    width: 100%;
+    transition: all 0.5s ease-in-out;
+    border-radius: 10px;
+}
+
+.card-quinto:hover {
+    background-position: 80% 20%;
+    transform: rotate3d(0.5, 1, 0, 30deg);
+}
+
+.card-sexto:hover {
+    background-position: 80% 20%;
+    transform: rotate3d(0.5, 1, 0, 30deg);
+}
+
+.card-setimo:hover {
+    background-position: 80% 20%;
+    transform: rotate3d(0.5, 1, 0, 30deg);
+}
+
+.card-oitavo:hover {
+    background-position: 80% 20%;
+    transform: rotate3d(0.5, 1, 0, 30deg);
+}
+
+.card-nono:hover {
+    background-position: 80% 20%;
+    transform: rotate3d(0.5, 1, 0, 30deg);
+}
+
+.card-decimo:hover {
+    background-position: 80% 20%;
+    transform: rotate3d(0.5, 1, 0, 30deg);
+}
+
+.card-11:hover {
+    background-position: 80% 20%;
+    transform: rotate3d(0.5, 1, 0, 30deg);
+}
+
+.card-12:hover {
+    background-position: 80% 20%;
+    transform: rotate3d(0.5, 1, 0, 30deg);
+}
+
+.card-13:hover {
+    background-position: 80% 20%;
+    transform: rotate3d(0.5, 1, 0, 30deg);
+}
+
+.card-14:hover {
+    background-position: 80% 20%;
+    transform: rotate3d(0.5, 1, 0, 30deg);
+}
+
+.card-15:hover {
+    background-position: 80% 20%;
+    transform: rotate3d(0.5, 1, 0, 30deg);
+}
+
+.card-16:hover {
+    background-position: 80% 20%;
+    transform: rotate3d(0.5, 1, 0, 30deg);
+}
+
+.card-17:hover {
+    background-position: 80% 20%;
+    transform: rotate3d(0.5, 1, 0, 30deg);
+}
+
+.card-18:hover {
+    background-position: 80% 20%;
+    transform: rotate3d(0.5, 1, 0, 30deg);
+}
+
+.card-19:hover {
+    background-position: 80% 20%;
+    transform: rotate3d(0.5, 1, 0, 30deg);
+}
+
+.card-20:hover {
+    background-position: 80% 20%;
+    transform: rotate3d(0.5, 1, 0, 30deg);
+}
